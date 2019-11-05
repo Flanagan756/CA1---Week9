@@ -44,6 +44,8 @@ namespace CA1___Week9
             //sort by author
             Array.Sort(allBooks);
             Console.WriteLine("Sorting the Reading list by Author");
+            Console.WriteLine();
+            Console.WriteLine("Author         Title       Pages      Genre      Publication Date");
 
             //DisplayBooks
             Display(ReadingList);
@@ -54,7 +56,7 @@ namespace CA1___Week9
         {
             foreach (Book book in books)
             {
-                Console.WriteLine("{0,-10}", book);
+                Console.WriteLine("{0,-15}", book);
             }
         }
 
